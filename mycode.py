@@ -12,8 +12,10 @@ df = pd.DataFrame(data)
 new_row_col = {'Name': 'GF1', 'Age':20, 'City':'City1'}
 df.loc[len(df.index)] = new_row_col
 
+#Adding new row to df for v3
 
-
+new_row_col2 = {'Name': 'GF2', 'Age':30, 'City':'City2'}
+df.loc[len(df.index)] = new_row_col2
 
 data_dir ='data'
 os.makedirs(data_dir,exist_ok=True)
