@@ -8,6 +8,10 @@ data ={'Name':['Alice','Bob','Charlie'],
 
 df = pd.DataFrame(data)
 
+# Adding new row to df for v2 
+new_row_col = {'Name': 'GF1', 'Age':20, 'City':'City1'}
+df.loc[len(df.index)] = new_row_col
+
 
 
 
